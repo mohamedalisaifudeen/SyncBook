@@ -1,8 +1,14 @@
-<div>
-    <h1>Welcome to the Ticket booking system</h1>
+<div class="home-container">
+  <div class="overlay"></div>
+  <div class="content-card">
+    <h1>🎟️ Welcome to the Ticket Booking System</h1>
     <h2>Select the Portal to Continue</h2>
-    <button routerLink="/customer"  type="button" class="btn btn-primary">Customer Portal</button>
-    <button routerLink="/vendor" type="button" class="btn btn-primary">Vender Potal</button>
-   
-    <p>copyright © {{currentYear}} Muhammed Ali 20231783</p>
+    <div class="button-group">
+      <button routerLink="/customer" type="button" class="btn-custom">Customer Portal</button>
+      <button routerLink="/vendor" type="button" class="btn-custom">Vendor Portal</button>
+    </div>
+  </div>
+  <footer>
+    &copy; {{ currentYear }} Muhammed Ali 20231783
+  </footer>
 </div>

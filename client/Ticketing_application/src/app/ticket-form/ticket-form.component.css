@@ -1,0 +1,55 @@
+/* card styling */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* title */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+/* input fields */
+.form-label {
+  color: #444;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* submit button */
+button[type="submit"] {
+  background-color: #0d6efd;
+  border: none;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0b5ed7;
+}

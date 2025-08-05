@@ -1,62 +1,108 @@
-.crd-form{
-    width: 35rem;
-
-    padding: 1rem;
-}
-button{
-    width: 31rem !important;
-}
-body{
-    background-color: aliceblue;
-}
-.stats{
-    margin: 3rem;
-}
-button{width: 100% !important;}
-h1{
-    text-align: center;
-    margin-top: 5rem;
-    font-size: 5rem;
-    font-weight: 700;
+body {
+  background: #f0f4f8;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.tickets{
-  display: flex;
+.customer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.tic{
-  font-size: 3rem;
-  margin: 3rem;
+.stat-card h6 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
 }
 
-p{
-    font-size: 4rem;
+.stat-card p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #007bff;
 }
-button{
-    width: 25rem;
-    margin-top: 2rem;
+
+.action-button {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
-.container{
-    display: flex;
-    justify-content: center;
+
+.action-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
 }
-.bdy1{
-    box-shadow: 0 41px 35px rgba(0,0,0,0.2);
-    display: flex;
+
+.tickets-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #333;
 }
-.crd1{
-    width: 17rem;
-    margin: 2rem;
-    height: 12rem;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    border-radius: 1rem;
-    margin-right: 15rem;
-    margin-bottom: 5rem;
+
+.tickets-info p {
+  margin: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  background: #fff;
+  border-radius: 0.5rem;
+  border-collapse: collapse;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  background: #f7f9fb;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .tickets-info {
+    flex-direction: column;
     text-align: center;
-}
-
-
-.row{
-    display: block;
+  }
 }
